@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+class A
+{
+private:
+    int id = 101;
+    string name = "Anisul";
+public:
+    friend class B;   //je class er private member access korte hobe oi class er public ekta frined class create korte hobe
+};
+class B
+{
+public:
+    void display(A ob)    //je class er private member ase se class er object nibo and 
+                         //object  er maddome variable gula ke access korte parbo
+    {
+        cout<<ob.id<<" "<<ob.name<<endl;
+    }
+};
+int main()
+{
+    A ob1;
+    B ob2;
+    ob2.display(ob1);
+}
