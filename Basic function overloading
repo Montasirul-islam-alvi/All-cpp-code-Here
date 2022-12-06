@@ -1,0 +1,24 @@
+# All-cpp-code-Here
+//an overloaded function is actually a group of functions with same name.when the function is called ,
+//which of them will be executed depends on the type and number of arguments supplied in the call.
+#include<iostream>
+using namespace std;
+void method();
+void method(int x);
+void method(char y);
+int main()
+{
+    //int a;
+    method();
+    method(321);
+    method('w');
+    return 0;
+}
+void method() { cout<<"No argument"<<endl; }
+void method(int x){ cout<<"value of x = :"<<x<<endl; }
+void method(char y){ cout<<"value of y = "<<y<<endl; }
+
+/*output:
+No argument
+value of x = :321
+value of y = w*/
