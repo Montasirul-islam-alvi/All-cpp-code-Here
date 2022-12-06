@@ -1,0 +1,29 @@
+# All-cpp-code-Here
+//jokon kono ekti constructor ke multiple time bibinno peramiter er upor bitti kore leki thake constructor overloading bole
+#include<iostream>
+using namespace std;
+void method();
+void method(int x);
+void method(char y);
+
+class overloading
+{
+public:
+    overloading()
+    {
+        cout<<"Default constructor"<<endl;
+    }
+    overloading(int a)
+    {
+        cout<<"value of a = "<<a<<endl;
+    }
+    overloading(int p,double q)
+    {
+        cout<<"value of p = "<<p<<endl<<"value of q = "<<q<<endl;
+    }
+};
+int main()
+{
+    overloading ob1,ob2(109),ob3(250,30.99);
+    return 0;
+}
