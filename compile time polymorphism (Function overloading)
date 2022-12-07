@@ -1,0 +1,29 @@
+# All-cpp-code-Here
+#include<bits\stdc++.h>
+using namespace std;
+//add nam er function tar binno binno rup royeche duita sonka jog korteche, tinta sonka jog korteche and 
+//kono kisui jog kortese na
+//ortat kono ekta jinis er binno binno rup ei hosse polymorphism
+class overload
+{
+public:
+    void add(int a,int b)
+    {
+        cout<<a+b<<endl;
+    }
+    void add(int a,int b,int c)
+    {
+        cout<<a+b+c<<endl;
+    }
+    void add()
+    {
+        cout<<"Nothing to add"<<endl;
+    }
+};
+int main()
+{
+    overload ob1;
+    ob1.add();
+    ob1.add(10,20);
+    ob1.add(10,20,30);
+}
