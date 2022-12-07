@@ -1,0 +1,35 @@
+# All-cpp-code-Here
+#include<bits\stdc++.h>
+using namespace std;
+class person
+{
+public:
+    void display()
+    {
+        cout<<"I am a person"<<endl;
+    }
+};
+class student  : public person
+{
+public:
+    void display()
+    {
+        cout<<"I am a studnent"<<endl;
+    }
+};
+class Teacher : public person
+{
+public:
+    void display()
+    {
+        cout<<"I am a Teacher"<<endl;
+    }
+};
+int main()
+{
+    student s;
+    s.display();
+
+    Teacher t;
+    t.display();
+}
