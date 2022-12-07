@@ -1,0 +1,30 @@
+# All-cpp-code-Here
+#include<bits\stdc++.h>
+using namespace std;
+class coord
+{
+    int x,y;
+    public:
+    coord() { x = 0,y = 0; }
+    coord(int a,int b){ x = a, y = b; }
+
+    void show()
+    {
+        cout<<x<<" "<<y<<endl;
+    }
+    coord operator + (coord o4)   ///here overloading operator +
+    {
+        coord temp;
+        temp.x = x+o4.x;
+        temp.y = y+o4.y;
+
+        return temp;
+    }
+};
+int main()
+{
+    coord o1(1,2),o2(2,3),o3;
+    o3 = o1+o2;
+    o3.show();
+    return 0;
+}
